@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strncpy - copy 
+ * _strncpy - copy
  * @dest: dest
  * @src: src
  * @h: int
@@ -41,7 +41,7 @@ int _strlen(char *s)
  * _strncat - Concantenates
  * @dest: dest
  * @src: src
- * @n: pointer
+ * @h: pointer
  * Return: dest
  */
 char *_strncat(char *dest, const char *src, size_t h)

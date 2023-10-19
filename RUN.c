@@ -9,7 +9,7 @@ void _run(char **r, char **argv, char **envp)
 {
 	pid_t child;
 	int x;
-  
+
 	child = fork();
 	if (child == -1)
 	{

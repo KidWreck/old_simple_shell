@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * _len - len
- * @n: int
+ * @h: int
  * Return: len
  */
 int _len(int h)
