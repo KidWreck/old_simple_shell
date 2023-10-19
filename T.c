@@ -24,3 +24,24 @@ char *tr(char *klam)
 	free(c);
 	return (klam);
 }
+
+/**
+ * _cmp - compare
+ * @s1: function
+ * @s2: function
+ * Return: cmp
+ */
+int _cmp(char *s1, char *s2)
+{
+	int cmp = 0;
+
+	while (*s1 == *s2 && *s1 != '\0')
+	{
+		s1++;
+		s2++;
+	}
+	if (s1 != s2)
+		cmp = *s1 - *s2;
+
+	return (cmp);
+}
