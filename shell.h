@@ -38,7 +38,6 @@ char *_strncat(char *dest, const char *src, size_t h);
 int _cmp(char *s1, char *s2);
 int _strlen(char *s);
 char *_cat(char *dest, char *src);
-void h_exit(char *klam);
 char *_path(char **argv, char *klam);
 void _sig(int n);
 int _len(int h);
