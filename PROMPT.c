@@ -26,15 +26,15 @@ void prompt(char **argv, char **envh, bool f)
 		if (f && isatty(STDIN_FILENO))
 			write(STDOUT_FILENO, "$ ", _strlen("$ "));
 		signal(SIGINT, _sig);
-		num_c = getline(&klam, &n, stdin);
-		if (num_c == -1) /*handles the end file case*/
+		num = getline(&klam, &n, stdin);
+		if (num == -1) /*handles the end file case*/
 		{
 			free(klam);
 			exit(EXIT_SUCCESS);
 		}
 		if (klam[num - 1] == '\n')
 			klam[num - 1] = '\0';
-		klam = trim(klam);
+		klam = tr(klam);
 		if (_strlen(klam) == 0)
 			continue;
 		i = 0;
