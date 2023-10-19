@@ -39,7 +39,7 @@ void prompt(char **argv, char **envh, bool f)
 			continue;
 		i = 0;
 		r[i] = strtok(klam, " \n");
-		_exit(klam);
+		h_exit(klam);
 		_path(r, klam);
 		while (r[i])
 		{
