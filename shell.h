@@ -11,6 +11,15 @@
 #include <stdbool.h>
 #define MAX 10
 
+/**
+ * struct denum - contains vars
+ * @cnt: lines cnt
+ */
+typedef struct denum
+{
+	int cnt;
+} denum;
+
 extern char **environ;
 
 void prompt(char **argv, char **envh, bool f);
