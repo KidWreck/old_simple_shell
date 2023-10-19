@@ -3,7 +3,7 @@
  * _exit - terminate the prog
  * @klam: command
  */
-int _exit(char *klam)
+void _exit(char *klam)
 {
 	if (_cmp("exit", klam) == 0)
 	{
