@@ -36,3 +36,22 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+
+/**
+ * _strncat - Concantenates
+ * @dest: dest
+ * @src: src
+ * @n: pointer
+ * Return: dest
+ */
+char *_strncat(char *dest, const char *src, size_t h)
+{
+	size_t dest_l = _strlen(dest);
+	size_t i;
+
+	for (i = 0; i < h && src[i] != '\0'; i++)
+		dest[dest_l + i] = src[i];
+	dest[dest_l + i] = '\0';
+
+	return (dest);
+}
