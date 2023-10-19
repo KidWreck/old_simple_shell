@@ -13,7 +13,7 @@ char *tr(char *klam)
 		i++;
 	len = _strlen(klam) - i + 1;
 	c = malloc(len + 1);
-	if (!cp)
+	if (!c)
 	{
 		perror("ERROR\n");
 		return (NULL);

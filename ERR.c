@@ -71,14 +71,14 @@ void geterr(denum *h, char **argv, char *klam)
 	int len;
 	char *msg, *s;
 
-	cnt_str = _itoa(h->cnt);
-	len = _len(argv[0]) + _len(klam) + _len(s) + 17;
-	errmsg = malloc(len);
+	s = _itoa(h->cnt);
+	len = _strlen(argv[0]) + _strlen(klam) + _strlen(s) + 17;
+	msg = malloc(len);
 	if (!msg)
 	{
 		return;
 	}
-	_cpy(msg, arv[0]);
+	_cpy(msg, argv[0]);
 	_cat(msg, ": ");
 	_cat(msg, s);
 	_cat(msg, ": ");
