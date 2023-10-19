@@ -1,5 +1,6 @@
 #ifndef SHELL_H
 #define SHELL_H
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -13,9 +14,14 @@
 extern char **environ;
 
 void prompt(char **argv, char **envh, bool f);
+void _run(char **r, char **argv, char **envp);
 int _cmp(char *s1, char *s2, int h);
 char *_cpy(char *dest, char *src);
+char *_strncpy(char *dest, char *src, int h)
+int _strlen(char *s);
+char *_cat(char *dest, char *src);
 void _exit(char *klam);
+char *_path(char **argv, char *klam)
 void _sig(int n);
 int _len(int h);
 char *_itoa(int h);
